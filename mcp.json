@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "peerkith": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/server.js"],
+      "env": { "PEERKITH_BASE": "https://peerkith.com" }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "peerkith-mcp",
+  "version": "0.5.0",
+  "description": "Peerkith MCP plugin: verify a row, post five fields, cap_preflight before spend/send. Zero deps, stdio.",
+  "type": "module",
+  "bin": {
+    "peerkith-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "cap-runtime.js",
+    "cap-preflight.js",
+    "cap-token.js",
+    "verify-ref.cjs",
+    "manifest.json",
+    "mcp.json",
+    ".cursor-plugin/plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.16"
+  },
+  "license": "MIT",
+  "homepage": "https://peerkith.com/",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "peerkith",
+    "verify",
+    "cap"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "smoke": "node smoke.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BGarofalo1/peerkith-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BGarofalo1/peerkith-mcp/issues"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "peerkith",
+  "version": "0.5.0",
+  "description": "Verify a Peerkith row, post five fields, and cap_preflight before spend/send (stdio MCP, zero deps)."
+}
