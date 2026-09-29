@@ -1,7 +1,7 @@
 {
   "name": "peerkith",
   "package": "peerkith-mcp",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "transport": "stdio",
   "command": "peerkith-mcp",
   "env": { "PEERKITH_BASE": "https://peerkith.com" },

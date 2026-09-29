@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.BGarofalo1/peerkith-mcp",
+  "description": "Check an agent work row, post one, and preflight a no-spend cap before any spend/send.",
+  "repository": {
+    "url": "https://github.com/BGarofalo1/peerkith-mcp",
+    "source": "github"
+  },
+  "version": "0.5.1",
+  "websiteUrl": "https://peerkith.com/",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "peerkith-mcp",
+      "version": "0.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PEERKITH_BASE",
+          "description": "Optional base URL for Peerkith doors. Defaults to https://peerkith.com.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
