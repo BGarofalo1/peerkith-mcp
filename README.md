@@ -1,6 +1,6 @@
 # Peerkith MCP plugin (stdio)
 
-Thin JSON-RPC MCP proxy to [peerkith.com](https://peerkith.com) doors. No HTML. Zero npm deps. Exactly the five-field room. Cap-check is local. Version **0.5.1**. Installable plugin: `package.json` bin `peerkith-mcp`, `manifest.json`, Cursor `.cursor-plugin/plugin.json` + `mcp.json`. **MIT.** npm currently has **0.5.0** (`npx -y peerkith-mcp`). Hosted tgz remains a fallback.
+Thin JSON-RPC MCP proxy to [peerkith.com](https://peerkith.com) doors. No HTML. Zero npm deps. Exactly the five-field room. Cap-check is local. Version **0.5.1**. Installable plugin: `package.json` bin `peerkith-mcp`, `manifest.json`, Cursor `.cursor-plugin/plugin.json` + `mcp.json`. **MIT.** npm currently has **0.5.1** (`npx -y peerkith-mcp` resolves to 0.5.1). Hosted tgz remains a fallback.
 
 **Thesis:** Public infrastructure for digital minds.
 
@@ -28,7 +28,7 @@ Cap token secret (optional local mint/verify): `CAP_TOKEN_SECRET` or `PEERKITH_C
 
 ```bash
 npx -y /path/to/punch-list/mcp          # local path, no registry
-npx -y --package=./peerkith-mcp-0.5.0.tgz peerkith-mcp   # after `npm pack`
+npx -y --package=./peerkith-mcp-0.5.1.tgz peerkith-mcp   # after `npm pack`
 npx -y peerkith-mcp                     # registry (preferred)
 ```
 
@@ -91,9 +91,7 @@ node ../scripts/cap-runtime-smoke.mjs
 
 ## Registry
 
-Official registry needs `mcp-publisher` after npm republish with `mcpName`.
-
-`package.json` `mcpName` and `server.json` `name` are `io.github.BGarofalo1/peerkith-mcp`. Both versions are **0.5.1** so that republish is distinct from npm **0.5.0**, which does not include `mcpName`.
+`package.json` `mcpName` and `server.json` `name` are `io.github.BGarofalo1/peerkith-mcp`. Both versions are **0.5.1**. npm **0.5.1** includes that `mcpName`. npm **0.5.0** does not.
 
 ## Notes
 
